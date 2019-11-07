@@ -31,8 +31,60 @@
 Його завдання полягає в обробці даних, які користувач вводить або надсилає, та оновлює Модель відповідно. Це єдина частина шаблону, з яким повинен взаємодіяти користувач.
 Контролер може бути узагальнений просто як збирач інформації, який потім передає його Моделі, яку слід організувати для зберігання, і не містить жодної логіки, окрім необхідної для збору вхідних даних.
 
+Для того, щоб продемонструвати розуміння патерну я поставила собі таке завдання: розробити форму з кнопкою, при натисканні на яку користувач зможе прочитати деяку інформацію про моу PHP.
 
-   Нижче приведений код програми на мові php:  
+Код файлу form.html:
+
+
+```html
+<!DOCTYPE HTML>
+<html>  
+<head>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form action="index.php" method="post" >       
+            <input class="button" type="submit" name="definition" value="Show definition">                      
+    </form>
+</body>
+</html>
+```
+
+Код файлу style.css:
+
+```css
+form{
+    border:1px black solid;
+    background-color:#98FB98;
+    width:50%;
+    margin:auto;
+}
+
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 35%;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#419444;
+}
+```
+
+   Нижче приведений код програми на мові php (index.php):  
    
 
 ```php
