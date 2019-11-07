@@ -3,9 +3,10 @@
 class Model
 {
     public $string;
+    
 
     public function __construct(){
-        $this->string = "MVC + PHP = Awesome!";
+        $this->string = "<strong>PHP </strong>— рефлексивный язык программирования, разработанный в качестве инструмента для создания динамических веб-страниц и работы с базами данных.";
     }
 }
 
