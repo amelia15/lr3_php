@@ -56,6 +56,8 @@
 Код файлу style.css:
 
 ```css
+@CHARSET "UTF-8";
+
 form{
     border:1px black solid;
     background-color:#98FB98;
@@ -63,18 +65,18 @@ form{
     margin:auto;
 }
 
-
-
 .button {
     background-color: #4CAF50; /* Green */
+   width: 70%;
+   height: 5%;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 20px 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 40px 35%;
+    margin: 10px 80px 15px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -83,6 +85,10 @@ form{
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color:#419444;
+}
+
+p{
+    text-align:center;
 }
 ```
 
